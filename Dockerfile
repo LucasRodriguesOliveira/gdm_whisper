@@ -13,4 +13,6 @@ RUN yarn install --frozen-lockfile
 COPY . .
 RUN yarn build
 
+EXPOSE 80
+
 CMD ["node", "dist/main"]

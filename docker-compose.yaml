@@ -7,6 +7,8 @@ services:
       - .env
     depends_on:
       - rmq
+    ports:
+      - '80:80'
   rmq:
     image: rabbitmq:4-management-alpine
     ports:
